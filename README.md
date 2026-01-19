@@ -12,14 +12,14 @@ All 3 arrows detected correctly:
 
 | Input | Output |
 |-------|--------|
-| ![pic5](pics/pic5.jpeg) | ![pic5_detected](results/pic5_detected.jpg) |
+| ![pic5](signature-based/pics/pic5.jpeg) | ![pic5_detected](signature-based/results/pic5_detected.jpg) |
 
 ### Failure Case
 Arrow missed due to thin line and background complexity:
 
 | Input | Output |
 |-------|--------|
-| ![pic4](pics/pic4.jpeg) | ![pic4_detected](results/pic4_detected.jpg) |
+| ![pic4](signature-based/pics/pic4.jpeg) | ![pic4_detected](signature-based/results/pic4_detected.jpg) |
 
 ## Status
 
