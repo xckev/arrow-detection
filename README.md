@@ -2,6 +2,9 @@
 
 Detects overlaid arrows in medical images and extracts their position, direction, and tip location.
 
+Based on: "Overlaid Arrow Detection for Labeling Regions of Interest in Biomedical Images"
+by K.C. Santosh et al., IEEE Intelligent Systems 2016
+
 ## Demo
 
 ### Success Case
