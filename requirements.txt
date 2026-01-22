@@ -1,10 +1,7 @@
-# Arrow Detection Pipeline Dependencies
-# Based on the geometric signature-based approach from Santosh et al.
-
-# Computer Vision
-opencv-python>=4.8.0
-
-# Scientific Computing
-numpy>=1.24.0
-scipy>=1.11.0
-
+opencv-python
+numpy
+scipy
+matplotlib
+torch
+ultralytics
+datasets

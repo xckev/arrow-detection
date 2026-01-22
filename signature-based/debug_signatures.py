@@ -9,8 +9,8 @@ Usage:
     python debug_signatures.py <image_path> [candidate_index]
     
 Examples:
-    python debug_signatures.py pics/pic3.png          # Auto-select best candidate
-    python debug_signatures.py pics/pic3.png 50       # Analyze candidate #50
+    python debug_signatures.py ../pics/pic3.png          # Auto-select best candidate
+    python debug_signatures.py ../pics/pic3.png 50       # Analyze candidate #50
 """
 
 import cv2
@@ -323,8 +323,8 @@ if __name__ == "__main__":
         print("Usage: python debug_signatures.py <image_path> [candidate_index]")
         print()
         print("Examples:")
-        print("  python debug_signatures.py pics/pic3.png          # Auto-select best")
-        print("  python debug_signatures.py pics/pic3.png 50       # Specific candidate")
+        print("  python debug_signatures.py ../pics/pic3.png          # Auto-select best")
+        print("  python debug_signatures.py ../pics/pic3.png 50       # Specific candidate")
         sys.exit(1)
 
     image_path = sys.argv[1]

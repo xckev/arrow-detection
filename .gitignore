@@ -3,3 +3,7 @@ __pycache__/
 debug_output/
 pictures/
 .DS_Store
+arrowenv/
+arrow-detection-*/
+arrow-detector-*
+runs/
