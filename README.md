@@ -1,33 +1,19 @@
 # Arrow Detection
 
-Detects overlaid arrows in medical images and extracts their position, direction, and tip location.
+Detects overlaid arrows in medical images and extracts their direction and tip location.
 
-Based on: "Overlaid Arrow Detection for Labeling Regions of Interest in Biomedical Images"
-by K.C. Santosh et al., IEEE Intelligent Systems 2016
-
-## Demo
-
-### Success Case
-All 3 arrows detected correctly:
-
-| Input | Output |
-|-------|--------|
-| ![pic5](pics/pic5.jpeg) | ![pic5_detected](signature-based/results/pic5_detected.jpg) |
-
-### Failure Case
-Arrow missed due to thin line and background complexity:
-
-| Input | Output |
-|-------|--------|
-| ![pic4](pics/pic4.jpeg) | ![pic4_detected](signature-based/results/pic4_detected.jpg) |
 
 ## Status
 
-This geometric signature-based approach (based on Santosh et al., IEEE 2016) works on clean arrows but **does not perform consistently enough** on real-world medical images with varying arrow styles, occlusion, and background complexity.
+This geometric signature-based approach (based on "Overlaid Arrow Detection for Labeling Regions of Interest in Biomedical Images" by Santosh et al., IEEE 2016) works on clean arrows but **does not perform consistently enough** on real-world medical images with varying arrow styles, occlusion, and background complexity.
 
-A **YOLO-based detection method** will be implemented as a more robust alternative.
+The **YOLO-based detection method** is implemented as a more robust alternative. We use fine-tune Yolo11 pose estimation models to identify arrows, their tips, and their tails.
 
-## Usage
+## Yolo-Based Usage
+
+Code is available to run in the arrow-detection iPython notebook.
+
+## Signature-Based Usage
 
 ```bash
 # Single image
@@ -40,7 +26,7 @@ python detect-arrows.py ./images/
 python detect-arrows.py image.jpg -t 0.65
 ```
 
-## Options
+## Signature-Based Options
 
 | Option | Description |
 |--------|-------------|
@@ -48,7 +34,7 @@ python detect-arrows.py image.jpg -t 0.65
 | `-o, --output` | Output directory (default: ./results/) |
 | `-q, --quiet` | Less verbose output |
 
-## How It Works
+## How Signature-Based Method works
 
 1. Multi-level binarization extracts arrow candidates
 2. Geometric analysis finds arrow vertices (tip + base points)
