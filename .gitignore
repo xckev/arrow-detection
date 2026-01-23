@@ -3,7 +3,10 @@ __pycache__/
 debug_output/
 pictures/
 .DS_Store
+.vscode
 arrowenv/
 arrow-detection-*/
 arrow-detector-*
 runs/
+dataset/
+medical-images/

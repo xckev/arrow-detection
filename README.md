@@ -3,15 +3,21 @@
 Detects overlaid arrows in medical images and extracts their direction and tip location.
 
 
-## Status
+## Overview
 
-This geometric signature-based approach (based on "Overlaid Arrow Detection for Labeling Regions of Interest in Biomedical Images" by Santosh et al., IEEE 2016) works on clean arrows but **does not perform consistently enough** on real-world medical images with varying arrow styles, occlusion, and background complexity.
+1. Geometric signature-based approach (based on "Overlaid Arrow Detection for Labeling Regions of Interest in Biomedical Images" by Santosh et al., IEEE 2016). Works on clean arrows but **does not perform consistently enough** on real-world medical images with varying arrow styles, occlusion, and background complexity.
+2. Yolo-based approach works with the yolo11m-pose object detection and pose estimation model, fine tuned on datasets of arrow-overlayed medical images.
+3. The arrow image generator helps to generate images of random arrows overlayed onto images to support training for the yolo-based approach.
 
 The **YOLO-based detection method** is implemented as a more robust alternative. We use fine-tune Yolo11 pose estimation models to identify arrows, their tips, and their tails.
 
 ## Yolo-Based Usage
 
 Code is available to run in the arrow-detection iPython notebook.
+
+## Arrow Image Generator Usage
+
+Code is available to run in the arrow-image-generator iPython notebook.
 
 ## Signature-Based Usage
 
