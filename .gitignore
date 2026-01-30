@@ -7,6 +7,8 @@ pictures/
 arrowenv/
 arrow-detection-*/
 arrow-detector-*
+resize_specific_arrows*
 runs/
 dataset/
+synthetic-medical-arrows/
 medical-images/
