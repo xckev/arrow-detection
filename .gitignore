@@ -13,3 +13,4 @@ dataset/
 synthetic-medical-arrows/
 medical-images/
 *.pt
+*.env
