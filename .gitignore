@@ -11,6 +11,7 @@ resize_specific_arrows*
 runs/
 dataset/
 synthetic-medical-arrows/
+reapplied/
 medical-images/
 *.pt
 *.env
